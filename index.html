@@ -82,10 +82,13 @@
                 <div class="percent" style="width: 80%;"></div>
               </li>
               <li>JavaScript
-                <div class="percent" style="width: 40%;"></div>
+                <div class="percent" style="width: 30%;"></div>
               </li>
-              <li>UI Design
-                <div class="percent" style="width: 50%;"></div>
+              <li>Photoshop
+                <div class="percent" style="width: 80%;"></div>
+              </li>
+              <li>Illustrator
+                <div class="percent" style="width: 80%;"></div>
               </li>
               <li>Sketch
                 <div class="percent" style="width: 50%;"></div>
@@ -228,11 +231,27 @@
              $('header').css({"background":"#979797"});
              $('.navbar-default .navbar-nav>li>a').css({"color":"#F0E5DE"});
              $('.logo').css({"background-image":"url('img/logo02.png')"});
+             $('.navbar-default .navbar-toggle .icon-bar').css({"background-color":"#F0E5DE"});
+
+          } else if($(this).scrollTop() < 600 && $(window).width() < 481){
+             $('header').css({"background":"transparent"});
+             $('.navbar-default .navbar-nav>li>a').css({"color":"#F0E5DE"});
+             $('.logo').css({"background-image":"url('img/logo.png')"});
+             $('.navbar-default .navbar-toggle .icon-bar').css({"background-color":"#7C7877"});
           } else {
              $('header').css({"background":"transparent"});
              $('.navbar-default .navbar-nav>li>a').css({"color":"#7C7877"});
              $('.logo').css({"background-image":"url('img/logo.png')"});
+             $('.navbar-default .navbar-toggle .icon-bar').css({"background-color":"#7C7877"});
           }
+      });
+
+      $(function(){ 
+        if($(window).width() < 481){ //當視窗小於480時才運作
+        $('.navbar a').on('click', function(){
+            $('.navbar-toggle').click();
+          });
+        }
       });
 
       new WOW().init();

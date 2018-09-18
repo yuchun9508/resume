@@ -79,11 +79,6 @@ header .container{
 	right: 5%;
 	top: 45%;
 }
-.intro a{
-	display: inline-block;
-	margin-top: 5%;
-	margin-left: 50%;
-}
 h1{
 	font-size: 64px;
 }
@@ -213,4 +208,74 @@ footer .container{
 }
 .copyright{
 	float: right;
+}
+
+/* RWD */
+@media (max-width: 768px) {
+	/* banner */
+	.intro{
+		position: absolute;
+		right: 25%;
+		top: 65%;
+	}
+	/* footer */
+	footer .container{
+		width: 50%;
+		text-align: center;
+	}
+	.contact{
+		float: none;
+	}
+	.contact ul li{
+		float: none;
+	}
+	.copyright{
+		float: none;
+	}
+}
+@media (max-width: 480px) {
+	/* menu */
+	.navbar-default .navbar-collapse{
+	    border-color: rgba(0,0,0,0);
+	}
+	.navbar-default .navbar-toggle {
+	    border-color: rgba(0,0,0,0);
+	}
+	.navbar-default .navbar-toggle:hover {
+	    background-color: rgba(0,0,0,0);
+	}
+	.navbar-toggle {
+	    padding: 9px 0px;
+	    margin-right: 0px;
+	}
+	.nav {
+		text-align: right;
+		background-color: rgba(124,120,119,0.7);
+		margin-left: 200px;
+	}
+	.navbar-default .navbar-nav>li>a {
+	    color: #F0E5DE;
+	}
+	.navbar-default .navbar-nav>li>a:hover span {
+	    background-color: transparent;
+	    padding: 0px;
+	}
+	.navbar-default .navbar-nav>li:hover{
+	    margin: 0px;
+	}
+	/* banner */
+	.intro{
+		position: absolute;
+		right: 15%;
+	}
+	h1{
+		font-size: 54px;
+	}
+	h4{
+		font-size: 26px;
+	}
+	/* footer */
+	footer .container{
+		width: 100%;
+	}
 }
