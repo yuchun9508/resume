@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Resume | Chun</title>
+    <title>Yu Chun Wu</title>
     <link rel="icon" href="img/favicon.png" type="image/ico" />
 
     <!-- Bootstrap -->
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!-- Custom -->
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,172 +26,113 @@
   </head>
 
   <body>
-
-    <!-- Menu -->
     <header>
       <div class="container">
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <div class="logo" href="#" style="background-image: url(img/logo.png);"></div>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about"><span>ABOUT</span></a></li>
-                <li><a href="#exp"><span>EXPERIENCE</span></a></li>
-                <li><a href="#portfolio"><span>PORTFOLIO</span></a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </header>
 
-    <!-- Banner -->
-    <section class="banner" style="background-image: url(img/banner.jpg);">
-      <div class="container">
-        <div class="intro wow fadeInUp">
-          <h4>Hello, I'm</h4>
-          <h1>Yu Chun Wu</h1>
-          <div class="scroll-down"><span></span><span></span><span></span></div>
+    <div id="parallax-container">
+      <section class="banner">
+        <div class="container">
+          <div class="text">
+            <h2>Hi, I’m Chun.</h2>
+            <p>I’m a web developer from Taipei, Taiwan. This website shows my latest works. Feel free to look around!</p>
+          </div>
+          <div class="pic"></div>
+          <div class="scroll-down">Scroll Down<span class="arrow"></span></div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <!-- About -->
-    <section id="about" style="background-color: #7C7877; color: #F0E5DE;">
-      <div class="container wow fadeInUp">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <h3>01.<br>ABOUT</h3>
-          </div>
-          <div class="col-xs-12 col-sm-8">
-            <p>我是吳宇純，台南人，畢業於高雄大學資訊管理學系，目前在台北工作。<br>
-            現職是在旅遊電商公司的數位行銷部門擔任設計助理。職務內容主要是負責活動頁的程式撰寫，使用程式語言HTML5、CSS3、jQuery套件以及Bootstrap框架；另外也負責站上商品找圖、修圖、製圖，因此也熟悉Photoshop、Illustrator軟體。除了工作上的實務經驗，目前也正在學習UI繪製工具Sketch以及Vue.js框架，朝著前端設計師的職涯方向發展。</p>
-            <ul class="skill-bar">
-              <li>HTML / CSS
-                <div class="percent" style="width: 80%;"></div>
-              </li>
-              <li>JavaScript
-                <div class="percent" style="width: 30%;"></div>
-              </li>
-              <li>Photoshop
-                <div class="percent" style="width: 80%;"></div>
-              </li>
-              <li>Illustrator
-                <div class="percent" style="width: 80%;"></div>
-              </li>
-              <li>Sketch
-                <div class="percent" style="width: 50%;"></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="exp" style="background-color: #D9D4CF; color: #7C7877;">
-      <div class="container wow fadeInUp">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <h3>02.<br>EXPERIENCE</h3>
-          </div>
-          <div class="col-xs-12 col-sm-8 exp-box">
-            <div class="company">
-              <h5>Design Assistant</h5>
-              <p>KKday 酷遊天國際旅行社股份有限公司<br>Digital Marketing Dept.</p>
-            </div>
-            <div class="duration">
-              <p>2017 - Present</p>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" style="color: #7C7877;">
-      <div class="container wow fadeInUp">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <h3>03.<br>PORTFOLIO</h3>
-          </div>
-          <div class="col-xs-12 col-sm-8">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-              </ol>
-
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <a href="https://event.kkday.com/zh-tw/event/linepay" target="_blank"><img src="img/work01.jpg"></a>
-                </div>
-
-                <div class="item">
-                  <a href="https://event.kkday.com/zh-tw/event/betheretw" target="_blank"><img src="img/work02.jpg"></a>
-                </div>
-
-                <div class="item">
-                  <a href="https://event.kkday.com/zh-tw/event/nightout" target="_blank"><img src="img/work03.jpg"></a>
-                </div>
-
-                <div class="item">
-                  <a href="https://event.kkday.com/zh-tw/event/kids" target="_blank"><img src="img/work04.jpg"></a>
-                </div>
-
-                <div class="item">
-                  <a href="https://event.kkday.com/zh-tw/event/liveinsydney" target="_blank"><img src="img/work05.jpg"></a>
+    <div id="regular-container">
+      <section id="portfolio">
+        <div class="title">Portfolio</div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12">
+              <div class="card">
+                <div class="pic" style="background-image: url(img/card_01.jpg)"></div>
+                <div class="detail">
+                  <h4>KKday | Year in Review 2018</h3>
+                  <ul>
+                    <li>- In charge of coding in this project</li>
+                    <li>- Add CSS and jQuery animation to improve user experience</li>
+                    <li>- Responsive web design</li>
+                  </ul>
+                  <a href="https://yuchun9508.github.io/2018_year_in_review/" target="_blank" class="btn">View <span class="arrow"></span></a>
                 </div>
               </div>
-
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="card">
+                <div class="pic" style="background-image: url(img/card_02.jpg)"></div>
+                <div class="detail">
+                  <h4>KKday | Healing Trip Event</h3>
+                  <ul>
+                    <li>- In charge of coding in this project</li>
+                    <li>- Add CSS and jQuery animation to improve user experience</li>
+                    <li>- Responsive web design</li>
+                  </ul>
+                  <a href="https://yuchun9508.github.io/201904_healing_trip/" target="_blank" class="btn">View <span class="arrow"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="card">
+                <div class="pic" style="background-image: url(img/card_03.jpg)"></div>
+                <div class="detail">
+                  <h4>KKday |  Japan Golden Week Event</h3>
+                  <ul>
+                    <li>- In charge of coding in this project</li>
+                    <li>- Add CSS and jQuery animation to improve user experience</li>
+                    <li>- Responsive web design</li>
+                  </ul>
+                  <a href="https://yuchun9508.github.io/2019_JP_GW/" target="_blank" class="btn">View <span class="arrow"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="card">
+                <div class="pic" style="background-image: url(img/card_04.jpg)"></div>
+                <div class="detail">
+                  <h4>KKday | U.S. Product Promote Event</h3>
+                  <ul>
+                    <li>- In charge of coding in this project</li>
+                    <li>- Make a little lottery game to interact with users</li>
+                    <li>- Responsive web design</li>
+                  </ul>
+                  <a href="https://yuchun9508.github.io/201811_USA/" target="_blank" class="btn">View <span class="arrow"></span></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="contact">
+      </section>
+      <section id="contact">
+        <div class="title">Contact</div>
+        <div class="container">
+          <h3>Get in Touch</h3>
+          <p>Do you want to know more about me or my works?<br>
+            Send me an email or refer to the links below!</p>
           <ul>
-            <li><i class="fab fa-github"></i><a href="https://github.com/yuchun9508" target="_blank">&nbsp;&nbsp;https://github.com/yuchun9508</a></li>
-            <li><i class="fas fa-envelope"></i>&nbsp;&nbsp;yuchun9508@gmail.com</li>
-            <div class="clearfix"></div>
+            <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=yuchun9508@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+            <li><a href="https://github.com/yuchun9508" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/yuchunwu/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
           </ul>
+          <div class="clearfix"></div>
+          <a href="" target="_blank" class="btn">Download CV</a>
         </div>
-        <div class="copyright">
+      </section>
+      <footer>
+        <div class="container">
           <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Chun 2018. All rights reserved.</p>
         </div>
-        <div class="clearfix"></div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -201,8 +142,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <script>
+
+      // add smooth scrolling
       $(document).ready(function(){
-        // Add smooth scrolling to all links
+
         $("a").on('click', function(event) {
 
           // Make sure this.hash has a value before overriding default behavior
@@ -226,33 +169,52 @@
         });
       });
 
+      // on scroll
       $(document).scroll(function(){
-          if($(this).scrollTop() > 600){   
-             $('header').css({"background":"#979797"});
-             $('.navbar-default .navbar-nav>li>a').css({"color":"#F0E5DE"});
-             $('.logo').css({"background-image":"url('img/logo02.png')"});
-             $('.navbar-default .navbar-toggle .icon-bar').css({"background-color":"#F0E5DE"});
 
-          } else if($(this).scrollTop() < 600 && $(window).width() < 481){
-             $('header').css({"background":"transparent"});
-             $('.navbar-default .navbar-nav>li>a').css({"color":"#F0E5DE"});
-             $('.logo').css({"background-image":"url('img/logo.png')"});
-             $('.navbar-default .navbar-toggle .icon-bar').css({"background-color":"#7C7877"});
-          } else {
-             $('header').css({"background":"transparent"});
-             $('.navbar-default .navbar-nav>li>a').css({"color":"#7C7877"});
-             $('.logo').css({"background-image":"url('img/logo.png')"});
-             $('.navbar-default .navbar-toggle .icon-bar').css({"background-color":"#7C7877"});
+        // header on scroll
+        if($(this).scrollTop() > 50){     
+          $('header').addClass('active');
+        } else { 
+          $('header').removeClass('active');
+        }
+
+        // parallax scrolling
+        let parent = $('#parallax-container .container');
+        let children = $('#parallax-container .container div');
+
+        if($(window).width() < 481){ //mobile
+          for(let i = 0; i < children.length; i++) {
+            if(children[i].className === 'scroll-down'){
+              children[i].style.transform = 'rotate(90deg) translateY(' + (window.pageYOffset * (i+1) / children.length) + 'px)';
+            } else{
+              children[i].style.transform = 'translateY(-' + (window.pageYOffset * (i+1) / children.length) + 'px)';
+            }
           }
-      });
-
-      $(function(){ 
-        if($(window).width() < 481){ //當視窗小於480時才運作
-        $('.navbar a').on('click', function(){
-            $('.navbar-toggle').click();
-          });
+          $('#parallax-container .container div').css('opacity', 1 - $(window).scrollTop() / 500);
+        } else{
+          for(let i = 0; i < children.length; i++) {
+            if(children[i].className === 'scroll-down'){
+              children[i].style.transform = 'rotate(90deg) translateY(-' + (window.pageYOffset * (i+1) / children.length) + 'px)';
+            } else{
+              children[i].style.transform = 'translateY(-' + (window.pageYOffset * (i+1) / children.length) + 'px)';
+            }
+          }
+          $('#parallax-container .container div').css('opacity', 1 - $(window).scrollTop() / 250);
         }
       });
+
+      // apply wow.js
+      $(function(){ 
+        if($(window).width() < 481){ //mobile
+          $('.banner .pic').addClass('wow fadeInUp');
+          $('.banner .text').addClass('wow fadeInDown');
+        } else{
+          $('.banner .pic').addClass('wow fadeInDown');
+          $('.banner .text').addClass('wow fadeInUp');
+        }
+      });
+      $('#portfolio .card').addClass('wow fadeInUp');
 
       new WOW().init();
       var wow = new WOW({
