@@ -100,30 +100,8 @@ ul{
 		transform: scale(1, 1) translate(5px,-3px);
 	}
 }
-@-webkit-keyframes arrow-down{
-	0% {
-		transform: scale(0, 1) translate(5px,-3px);
-	}
-	50% {
-		transform: scale(1, 1) translate(5px,-3px);
-	}
-	100% {
-		transform: scale(1, 1) translate(5px,-3px);
-	}
-}
 @media (max-width: 480px) {
 	@keyframes arrow-down{
-		0% {
-			transform: scale(0, 1) translate(80px,-23px);
-		}
-		50% {
-			transform: scale(1, 1) translate(80px,-23px);
-		}
-		100% {
-			transform: scale(1, 1) translate(80px,-23px);
-		}
-	}
-	@-webkit-keyframes arrow-down{
 		0% {
 			transform: scale(0, 1) translate(80px,-23px);
 		}
