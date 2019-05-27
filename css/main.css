@@ -61,18 +61,18 @@ ul {
   transition: all .3s;
 }
 
-.btn:hover {
-  background-color: #000000;
-  color: #ffffff !important;
-}
-
-.btn:hover .arrow {
-  background-color: #ffffff;
-}
-
-.btn:hover .arrow::after {
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+@media not all and (pointer: coarse) {
+  .btn:hover {
+    background-color: #000000;
+    color: #ffffff !important;
+  }
+  .btn:hover .arrow {
+    background-color: #ffffff;
+  }
+  .btn:hover .arrow::after {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+  }
 }
 
 #parallax-container {
@@ -202,8 +202,10 @@ header .container ul li {
   font-size: 16px;
 }
 
-header .container ul li:hover {
-  font-weight: bold;
+@media not all and (pointer: coarse) {
+  header .container ul li:hover {
+    font-weight: bold;
+  }
 }
 
 header.active {
@@ -634,8 +636,10 @@ header.active::after {
   transition: all .3s;
 }
 
-#contact .container ul li:hover {
-  opacity: 0.5;
+@media not all and (pointer: coarse) {
+  #contact .container ul li:hover {
+    opacity: 0.5;
+  }
 }
 
 #contact .container .btn {
