@@ -429,30 +429,9 @@ header{
 			}
 		}
 		ul{
+			display: flex;
+			justify-content: center;
 			font-size: 38px;
-			margin: auto;
-			width: 14%;
-			@media (max-width: 1024px) {
-				width: 19.6%;
-			}
-			@media (max-width: 768px) {
-				width: 26.1%;
-			}
-			@media (max-width: 480px) {
-				width: 48.3%;
-			}
-			@media (max-width: 384px) {
-				width: 52.1%;
-			}
-			@media (max-width: 375px) {
-				width: 53.3%;
-			}
-			@media (max-width: 360px) {
-				width: 55.5%;
-			}
-			@media (max-width: 320px) {
-				width: 62.5%;
-			}
 			li{
 				float: left;
 				margin: 0 10px;
@@ -466,6 +445,7 @@ header{
 		}
 		.btn{
 			margin-top: 15px;
+			font-weight: bold;
 		}
 	}
 }

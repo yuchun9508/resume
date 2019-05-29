@@ -583,51 +583,11 @@ header.active::after {
 }
 
 #contact .container ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
   font-size: 38px;
-  margin: auto;
-  width: 14%;
-}
-
-@media (max-width: 1024px) {
-  #contact .container ul {
-    width: 19.6%;
-  }
-}
-
-@media (max-width: 768px) {
-  #contact .container ul {
-    width: 26.1%;
-  }
-}
-
-@media (max-width: 480px) {
-  #contact .container ul {
-    width: 48.3%;
-  }
-}
-
-@media (max-width: 384px) {
-  #contact .container ul {
-    width: 52.1%;
-  }
-}
-
-@media (max-width: 375px) {
-  #contact .container ul {
-    width: 53.3%;
-  }
-}
-
-@media (max-width: 360px) {
-  #contact .container ul {
-    width: 55.5%;
-  }
-}
-
-@media (max-width: 320px) {
-  #contact .container ul {
-    width: 62.5%;
-  }
 }
 
 #contact .container ul li {
@@ -644,6 +604,7 @@ header.active::after {
 
 #contact .container .btn {
   margin-top: 15px;
+  font-weight: bold;
 }
 
 /* Footer */
